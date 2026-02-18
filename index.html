@@ -160,6 +160,57 @@
             transform: scale(1.05);
         }
 
+        /* REELS Челлендж - заблокированная кнопка */
+        .locked-card {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            color: #666;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 0 20px 25px;
+            text-align: center;
+            position: relative;
+            border: 1px solid #333;
+            opacity: 0.6;
+        }
+
+        .locked-card h3 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            color: #999;
+        }
+
+        .locked-card p {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .locked-button {
+            background: #1a1a1a;
+            color: #666;
+            padding: 10px 28px;
+            border-radius: 25px;
+            font-weight: 700;
+            border: 1px solid #333;
+            font-size: 14px;
+            cursor: not-allowed;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .locked-badge {
+            background: #333;
+            color: #999;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* Список модулей */
         .modules-list {
             padding: 0 20px 100px;
@@ -356,9 +407,11 @@
         <!-- Велком период и кнопка подписки -->
         <!-- Кнопка продления подписки -->
         <div style="margin: 0 20px 20px;">
-            <button style="width: 100%; background: linear-gradient(135deg, #FF6B00, #FF8C00); color: #000; border: none; padding: 12px; border-radius: 12px; font-weight: 600; font-size: 14px; cursor: pointer;">
-                💳 Продлить подписку
-            </button>
+            <a href="https://berekclub.ru/club_berekhub_" target="_blank" style="text-decoration: none;">
+                <button style="width: 100%; background: linear-gradient(135deg, #FF6B00, #FF8C00); color: #000; border: none; padding: 12px; border-radius: 12px; font-weight: 600; font-size: 14px; cursor: pointer;">
+                    💳 Продлить подписку
+                </button>
+            </a>
         </div>
 
 <!-- Счетчик -->
@@ -381,7 +434,7 @@
             </div>
         </div>
 
-        <!-- Спецпредложения (4 карточки в 2 столбца) -->
+        <!-- Спецпредложения (2 карточки в 2 столбца) -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 20px; margin-bottom: 25px;">
             <div class="special-card" style="margin: 0;">
                 <h3 style="font-size: 16px; margin-bottom: 6px;">📺 Эфир</h3>
@@ -398,21 +451,26 @@
                     <button class="special-button" style="padding: 8px 20px; font-size: 13px;">Скачать</button>
                 </a>
             </div>
+        </div>
 
-            <div class="special-card" style="margin: 0;">
-                <h3 style="font-size: 16px; margin-bottom: 6px;">✅ Чек-лист</h3>
-                <p style="font-size: 12px; margin-bottom: 10px;">Чек-лист аудита аккаунта</p>
-                <a href="https://t.me/c/3232406873/42" target="_blank" style="text-decoration: none;">
-                    <button class="special-button" style="padding: 8px 20px; font-size: 13px;">Скачать</button>
-                </a>
+        <!-- Заблокированные курсы (2 квадрата) -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 20px; margin-bottom: 25px;">
+            <div class="locked-card" style="margin: 0;">
+                <h3 style="font-size: 16px; margin-bottom: 6px;">🎬 REELS ЧЕЛЛЕНДЖ</h3>
+                <p style="font-size: 12px; margin-bottom: 10px;">30 дней создания вирусного контента</p>
+                <button class="locked-button" style="padding: 8px 20px; font-size: 13px;">
+                    <span>🔒</span>
+                    <span class="locked-badge">Закрыто</span>
+                </button>
             </div>
 
-            <div class="special-card" style="margin: 0;">
-                <h3 style="font-size: 16px; margin-bottom: 6px;">📝 Заявка</h3>
-                <p style="font-size: 12px; margin-bottom: 10px;">Заявка на разбор</p>
-                <a href="https://t.me/c/3232406873/43" target="_blank" style="text-decoration: none;">
-                    <button class="special-button" style="padding: 8px 20px; font-size: 13px;">Заполнить</button>
-                </a>
+            <div class="locked-card" style="margin: 0;">
+                <h3 style="font-size: 16px; margin-bottom: 6px;">💬 МАХ МЕССЕНДЖЕР</h3>
+                <p style="font-size: 12px; margin-bottom: 10px;">Инструкции</p>
+                <button class="locked-button" style="padding: 8px 20px; font-size: 13px;">
+                    <span>🔒</span>
+                    <span class="locked-badge">Закрыто</span>
+                </button>
             </div>
         </div>
 
@@ -421,7 +479,7 @@
             <div class="section-title">
                 <span>📚</span> Библиотека знаний
             </div>
-            <a href="https://t.me/c/3232406873/37" target="_blank" style="text-decoration: none;">
+            <a href="https://t.me/c/3232406873/116" target="_blank" style="text-decoration: none;">
                 <div style="background: rgba(255, 107, 0, 0.1); border: 1px solid #FF6B00; border-radius: 12px; padding: 15px; margin-bottom: 20px; text-align: center; cursor: pointer;">
                     <div style="font-size: 16px; color: #FF6B00; font-weight: 700; letter-spacing: 1px;">📅 ПРОГРАММА МЕСЯЦА</div>
                 </div>
@@ -446,24 +504,90 @@
                 </div>
             </a>
 
-            <a href="https://t.me/c/1490651753/235357" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="list-item">
-                    <div class="list-icon">🤝</div>
-                    <div class="list-content">
-                        <div class="list-title">Партнёрства</div>
-                        <div class="list-subtitle">Коллаборации и взаимопиар. Найди 3-5 партнёров для роста аудитории</div>
-                    </div>
-                    <div class="list-badge">ОТКРЫТО</div>
+            <div class="list-item" onclick="toggleSubmenu('partnership-submenu')" style="cursor: pointer;">
+                <div class="list-icon">🤝</div>
+                <div class="list-content">
+                    <div class="list-title">Партнёрства</div>
+                    <div class="list-subtitle">Коллаборации и взаимопиар. Найди 3-5 партнёров для роста аудитории</div>
                 </div>
-            </a>
+                <div class="list-badge">ОТКРЫТО</div>
+                <div class="list-arrow" id="partnership-arrow" style="opacity: 1;">▼</div>
+            </div>
+            <div id="partnership-submenu" class="submenu">
+                <a href="https://t.me/c/1490651753/235357" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Партнёрства и коллаборации</div>
+                        <div class="submenu-item-subtitle">Основы работы с партнёрами</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/98" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">ЭФИР: Партнёрства и коллаборации</div>
+                        <div class="submenu-item-subtitle">Прямой эфир с разбором стратегий</div>
+                    </div>
+                </a>
+            </div>
 
-            <div class="list-item">
+            <div class="list-item" onclick="toggleSubmenu('money-submenu')" style="cursor: pointer;">
                 <div class="list-icon">💰</div>
                 <div class="list-content">
                     <div class="list-title">Деньги и продажи</div>
                     <div class="list-subtitle">Монетизация, средний чек, воронки. Интеграция с Продамус</div>
                 </div>
+                <div class="list-badge">ОТКРЫТО</div>
+                <div class="list-arrow" id="money-arrow" style="opacity: 1;">▼</div>
             </div>
+            <div id="money-submenu" class="submenu">
+                <a href="https://t.me/c/3232406873/114" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Платежная система для : сз, ИП, ООО</div>
+                        <div class="submenu-item-subtitle">Выбор платёжной системы под разные формы</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/115" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Материалы к эфиру</div>
+                        <div class="submenu-item-subtitle">Дополнительные материалы по монетизации</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-item" onclick="toggleSubmenu('funnels-submenu')" style="cursor: pointer;">
+                <div class="list-icon">🎯</div>
+                <div class="list-content">
+                    <div class="list-title">Воронки</div>
+                    <div class="list-subtitle">Воронки продаж, настройка, интеграции и автоматизация</div>
+                </div>
+                <div class="list-badge">ОТКРЫТО</div>
+                <div class="list-arrow" id="funnels-arrow" style="opacity: 1;">▼</div>
+            </div>
+            <div id="funnels-submenu" class="submenu">
+                <a href="https://t.me/c/3232406873/63" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Теория: Воронки</div>
+                        <div class="submenu-item-subtitle">Основы построения воронок продаж</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/78" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Эфир: Настройка воронки</div>
+                        <div class="submenu-item-subtitle">Практическая настройка воронок</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/80" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Презентация "Воронки"</div>
+                        <div class="submenu-item-subtitle">Полная презентация по воронкам</div>
+                    </div>
+                </a>
+                <a href="https://chatplace.io/ru/mini-course?r=d6508f28-779d-4c9d-a799-6e470e53f6a0&d=14" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Бесплатный миникурс "Воронки"</div>
+                        <div class="submenu-item-subtitle">Интерактивный курс по воронкам</div>
+                    </div>
+                </a>
+            </div>
+
 <div class="list-item">
                 <div class="list-icon">📊</div>
                 <div class="list-content">
@@ -480,12 +604,34 @@
                 </div>
             </div>
 
-            <div class="list-item">
+            <div class="list-item" onclick="toggleSubmenu('socnets-submenu')" style="cursor: pointer;">
                 <div class="list-icon">📱</div>
                 <div class="list-content">
                     <div class="list-title">Соцсети</div>
                     <div class="list-subtitle">Telegram, ВКонтакте, TenChat, Одноклассники - полное руководство</div>
                 </div>
+                <div class="list-badge">ОТКРЫТО</div>
+                <div class="list-arrow" id="socnets-arrow" style="opacity: 1;">▼</div>
+            </div>
+            <div id="socnets-submenu" class="submenu">
+                <a href="https://t.me/c/3232406873/87" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Структура закрепов для соцсетей</div>
+                        <div class="submenu-item-subtitle">Организация закреплённых материалов</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/42" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Чек-лист аудита аккаунта</div>
+                        <div class="submenu-item-subtitle">Проверка и оптимизация профиля</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/43" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Заявка на разбор</div>
+                        <div class="submenu-item-subtitle">Получить разбор своего аккаунта</div>
+                    </div>
+                </a>
             </div>
 
             <div class="list-item">
@@ -588,6 +734,18 @@
                     <div class="submenu-item">
                         <div class="submenu-item-title">Создаем ИИ Двойника</div>
                         <div class="submenu-item-subtitle">Твой AI-аватар для контента</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/89" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">Нейросеть GROK</div>
+                        <div class="submenu-item-subtitle">Работа с GROK для генерации контента</div>
+                    </div>
+                </a>
+                <a href="https://t.me/c/3232406873/104" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="submenu-item">
+                        <div class="submenu-item-title">ПРОМПТ: Нейролингвистический паспорт</div>
+                        <div class="submenu-item-subtitle">Создание персонализированных промптов</div>
                     </div>
                 </a>
             </div>
