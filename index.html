@@ -392,7 +392,7 @@
                 <div class="logo">Б</div>
                 <div class="logo-text">
                     <h1>БЕРЕКХАБ</h1>
-                    <p>Клуб монетизации экспертности</p>
+                    <p>Клуб монетизации знаний</p>
                 </div>
             </div>
         </div>
@@ -527,7 +527,7 @@
                 <div class="list-icon">📱</div>
                 <div class="list-content">
                     <div class="list-title">Соцсети</div>
-                    <div class="list-subtitle">Telegram, ВКонтакте, TenChat, Одноклассники - полное руководство</div>
+                    <div class="list-subtitle">Телеграм, ВКонтакте, TenChat, Одноклассники - полное руководство</div>
                 </div>
                 <div class="list-badge">ОТКРЫТО</div>
                 <div class="list-arrow" id="socnets-arrow" style="opacity: 1;">▼</div>
@@ -551,7 +551,7 @@
                 <div class="list-icon">🔍</div>
                 <div class="list-content">
                     <div class="list-title">Исследования</div>
-                    <div class="list-subtitle">Аналитика аудитории Рунета, Telegram, социальных сетей</div>
+                    <div class="list-subtitle">Аналитика аудитории Рунета, Телеграм, социальных сетей</div>
                 </div>
                 <div class="list-badge">ОТКРЫТО</div>
                 <div class="list-arrow" id="research-arrow" style="opacity: 1;">▼</div>
@@ -579,7 +579,7 @@
             <div id="neuronets-submenu" class="submenu">
                 <div class="submenu-item" data-url="https://t.me/c/3232406873/34">
                     <div class="submenu-item-title">Помощник с нейросетями</div>
-                    <div class="submenu-item-subtitle">Доступ к ИИ-инструментам в Telegram</div>
+                    <div class="submenu-item-subtitle">Доступ к ИИ-инструментам в Телеграм</div>
                 </div>
                 <div class="submenu-item" data-url="https://t.me/c/3232406873/33">
                     <div class="submenu-item-title">Создаем ИИ Двойника</div>
@@ -651,15 +651,15 @@
             
             // Для iOS и macOS используем специальный формат ссылок
             if (platform === 'ios' || platform === 'macos') {
-                // Преобразуем t.me/c/ ссылки в telegram:// формат
+                // Преобразуем t.me/c/ ссылки в Телеграм:// формат
                 if (url.includes('t.me/c/')) {
                     // Извлекаем ID чата и ID сообщения
                     const matches = url.match(/t\.me\/c\/(\d+)\/(\d+)/);
                     if (matches) {
                         const chatId = matches[1].replace('-100', '');
                         const messageId = matches[2];
-                        // Пробуем открыть через telegram://
-                        window.location.href = `telegram://telegram.org/${chatId}/${messageId}`;
+                        // Пробуем открыть через Телеграм://
+                        window.location.href = `Телеграм://Телеграм.org/${chatId}/${messageId}`;
                         
                         // Если не сработало, открываем в браузере через таймаут
                         setTimeout(() => {
