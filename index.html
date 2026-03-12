@@ -449,7 +449,7 @@
 
         <!-- REELS Челлендж - Заблокировано -->
         <div class="locked-card">
-            <h3>🎬 Марафон Короткие ролики </h3>
+            <h3>🎬 Марафон Короткие ролики</h3>
             <p>30 дней создания вирусного контента • Скоро открытие</p>
             <button class="locked-button">
                 <span>🔒</span>
@@ -480,7 +480,7 @@
                 <div class="list-icon">🤝</div>
                 <div class="list-content">
                     <div class="list-title">Сотрудничество</div>
-                    <div class="list-subtitle">Коллаборации и партнеры Найди 3-5 партнёров для роста аудитории</div>
+                    <div class="list-subtitle">Коллаборации и партнеры. Найди 3-5 партнёров для роста аудитории</div>
                 </div>
                 <div class="list-badge">ОТКРЫТО</div>
                 <div class="list-arrow" id="partnership-arrow" style="opacity: 1;">▼</div>
@@ -643,7 +643,7 @@
             return 'other';
         }
 
-        // Функция для открытия ссылок
+        // Функция для открытия ссылок - ИСПРАВЛЕНО!
         function openLink(url) {
             if (!url) return;
             
@@ -651,15 +651,15 @@
             
             // Для iOS и macOS используем специальный формат ссылок
             if (platform === 'ios' || platform === 'macos') {
-                // Преобразуем t.me/c/ ссылки в Телеграм:// формат
+                // Преобразуем t.me/c/ ссылки в telegram:// формат (это стандартный протокол, его менять нельзя!)
                 if (url.includes('t.me/c/')) {
                     // Извлекаем ID чата и ID сообщения
                     const matches = url.match(/t\.me\/c\/(\d+)\/(\d+)/);
                     if (matches) {
                         const chatId = matches[1].replace('-100', '');
                         const messageId = matches[2];
-                        // Пробуем открыть через Телеграм://
-                        window.location.href = `Телеграм://Телеграм.org/${chatId}/${messageId}`;
+                        // Пробуем открыть через telegram:// (оригинальный протокол восстановлен)
+                        window.location.href = `telegram://telegram.org/${chatId}/${messageId}`;
                         
                         // Если не сработало, открываем в браузере через таймаут
                         setTimeout(() => {
